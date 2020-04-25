@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AD CSS</title>
 
+
+    <style>
+
+       a[target=_blank] {
+           
+           color:green;
+        }
+        a[target=_self] {
+            color:green;
+        }
+
+       
+       a[target="_link"] {
+
+           color: red;
+       }
+
+       #second-div > p:nth-of-type(odd) {
+           color: red;
+       }
+
+        #second-div > p:nth-of-type(even) {
+           color: blue;
+       }
+
+       #first-div>p::after {
+         content: "- NEW";
+         font-style: italic;
+         color: yellow;
+         padding-left: 10px;
+         }
+
+      body > p:last-child:hover {
+          font-style: italic;
+      }
+
+
+
+
+    </style>
+
+</head>
+
+  <body>
+      <h1>Main Heading</h1>
+      <p>Paragraph 1</p>
+      <a href="http://www.google.com/" target="_blank">Google</a>
+      <a href="http://www.google.com/doodles" target="_self">Google Doodles</a>
+      <a href="http://www.link-group.eu/" target="_link">Goto Link Group</a>
+     
+        <div id="first-div">
+          <h2>Subheading</h2>
+          <p>Paragraph 2</p>
+          <p>Paragraph 3</p>
+          <div id="second-div">
+              <h3>Sub subheading</h3>
+              <p>Paragraph 4</p>
+              <p>Paragraph 5</p>
+              <p>Paragraph 6</p>
+              <p>Paragraph 7</p>
+              <p>Paragraph 8</p>
+              
+              
+
+            </div>
+        </div>
+          <p>Paragraph 9</p>
+          <p>Paragraph 10</p>
+
+</body>
+</html>
